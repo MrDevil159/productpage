@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+  animation: slideInLeft 1s ease-in-out;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#bg-img {
+  background: url(https://dlcdnimgs.asus.com/websites/global/products/cx9bi3orfb1vfzjr/v1/features/images/desktop/00_bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 145vh;
+}
+#bg-img img.vert-move {
+  animation: mover 1s infinite alternate;
+}
+#bg-img img.vert-move {
+  animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+#bg-img .tufbanner {
+  animation: chikbuk 1s infinite alternate;
+}
+@keyframes chikbuk {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#bg-img .banner1cont h1 {
+  color: #f3ad00;
+}
+
+#bg-img2 .img-fluid {
+  width: 100%;
+}
+
+#container2 h1 {
+  background: -webkit-linear-gradient(#f1c975, #f3ad1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#container2 h3 {
+  color: white;
+}
+#container2 span {
+  color: white;
+}
+
+#cont3 h1 {
+  background: -webkit-linear-gradient(#f1c975, #f3ad1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#cont3 span {
+  color: white;
+}
+#cont3 .carousel {
+  width: 100%;
+}
+#cont3 .carousel-item {
+  width: 100%; /*width you want*/
+  height: 500px; /*height you want*/
+  overflow: hidden;
+}
+#cont3 .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#cont3 .carousel-caption {
+  background: black;
+}/*# sourceMappingURL=style.css.map */
