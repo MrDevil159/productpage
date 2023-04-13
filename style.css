@@ -13,7 +13,7 @@ body {
 }
 
 #bg-img {
-  background: url(https://dlcdnimgs.asus.com/websites/global/products/cx9bi3orfb1vfzjr/v1/features/images/desktop/00_bg.jpg);
+  background: url("./img/00_bg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 145vh;
@@ -73,6 +73,7 @@ body {
 }
 #cont3 .carousel {
   width: 100%;
+  background-image: linear-gradient(black, rgba(242, 187, 70, 0.2392156863), black);
 }
 #cont3 .carousel-item {
   width: 100%; /*width you want*/
@@ -87,4 +88,25 @@ body {
 }
 #cont3 .carousel-caption {
   background: black;
+}
+
+#cont4 {
+  background-image: black;
+}
+#cont4 img {
+  filter: invert(1);
+  opacity: 0.5;
+  scale: 0.5;
+}
+#cont4 h1 {
+  background: -webkit-linear-gradient(#f1c975, #f3ad1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #f3ad00;
+}
+
+#bg-low {
+  background: url("./img/bglow.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
