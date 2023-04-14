@@ -322,25 +322,81 @@
                         >
                         <div class="p-sm-3 ps-sm-5 pe-sm-5 p-2">
                             <span class="display-6 fs-5">
-                            <i class="fa fa-truck" aria-hidden="true"></i> Free Shipping
+                            <button type="button" class="btn btn-dark"><i class="fa fa-truck" aria-hidden="true"></i> Free Shipping
+                            </button>  
+                          </span>
+                        </div>
+                        <div class="p-sm-3 ps-sm-5 pe-sm-5 p-2">
+                            <span class="display-6 fs-5">
+                            <button type="button" class="btn btn-dark"><i class="fa fa-credit-card" aria-hidden="true"></i> Safe and Secure Payments
+                            </button>
+
                             </span>
                         </div>
                         <div class="p-sm-3 ps-sm-5 pe-sm-5 p-2">
                             <span class="display-6 fs-5">
-                            <i class="fa fa-credit-card" aria-hidden="true"></i>
-                            Safe and Secure Payments
-                            </span>
-                        </div>
-                        <div class="p-sm-3 ps-sm-5 pe-sm-5 p-2">
-                            <span class="display-6 fs-5">
-                            <i class="fa fa-headphones" aria-hidden="true"></i>
-                            Customer Support
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-headphones" aria-hidden="true"></i> Customer Support</button>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-bs-theme="dark">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-white" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form method="post" action="https://formspree.io/f/mvonvooy">
+                  <div class="mb-3">
+                    <label for="name" class="col-form-label text-white">Name:</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="col-form-label text-white">Email:</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="col-form-label text-white">Phone:</label>
+                    <input type="phone" class="form-control" name="phone" id="phone">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label text-white">Query:</label>
+                    <textarea class="form-control" name="message-text" id="message-text"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Send message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          var exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  var modalTitle = exampleModal.querySelector('.modal-title')
+  var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+  modalTitle.textContent = 'Contact Us'
+})
+        </script>
+
+
         <div class="container-fluid bg-dark">
             <div class="row">
                 <div class="col">
