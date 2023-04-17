@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <style>
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.burger-menu {
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sliding-panel {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  z-index: 1;
+  overflow-y: auto;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sliding-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sliding-panel li {
+  margin-bottom: 1rem;
+}
+
+.sliding-panel a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.burger-menu.open {
+  transform: rotate(90deg);
+}
+
+.sliding-panel.open {
+  left: 0;
+  transform: translateX(100%);
+}
+
+    
+        </style>
+        <header>
+            <div class="logo">
+              <img src="logo.png" alt="Logo">
+            </div>
+            <button class="burger-menu">Menu</button>
+            <nav class="sliding-panel">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+          <script>
+            // Get the burger menu button and sliding panel
+const burgerMenu = document.querySelector('.burger-menu');
+const slidingPanel = document.querySelector('.sliding-panel');
+
+// Toggle the sliding panel when the burger menu button is clicked
+burgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.toggle('open');
+  slidingPanel.classList.toggle('open');
+});
+
+// Hide the sliding panel when a link is clicked
+slidingPanel.addEventListener('click', (event) => {
+  if (event.target.tagName === 'A') {
+    burgerMenu.classList.remove('open');
+    slidingPanel.classList.remove('open');
+  }
+});
+
+          </script>
+          
+</body>
+</html>
