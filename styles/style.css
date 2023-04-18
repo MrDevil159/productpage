@@ -13,7 +13,7 @@ body {
 }
 
 #bg-img {
-  background: url("./img/00_bg.jpg");
+  background: url("../img/00_bg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 145vh;
@@ -106,7 +106,7 @@ body {
 }
 
 #bg-low {
-  background: url("./img/bglow.jpg");
+  background: url("../img/bglow.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
