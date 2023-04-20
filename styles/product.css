@@ -49,12 +49,17 @@
   border-radius: 20px;
 }
 
+.breadcrumb {
+  text-align: center;
+  line-height: 50px;
+}
+
 ul.breadcrumb {
   position: relative;
 }
 ul.breadcrumb li:before {
   content: "  >  ";
-  color: pink;
+  color: black;
   margin: 0 1px 0 1px;
   left: -10px;
   top: 8px;
@@ -64,6 +69,15 @@ ul.breadcrumb li:before {
 ul.breadcrumb li a {
   text-decoration: none;
   color: white;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: black;
 }
 
 .productdetail ul li {

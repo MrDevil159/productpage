@@ -142,26 +142,6 @@
           <div class="container-fluid d-flex justify-content-between align-items-center pb-2 pt-2 ps-0 pe-0">
             <div class="d-flex flex-sm-row flex-column align-items-center justify-content-center" style="font-size: 1rem">
               <img class="logotuf" width="71px" style="filter: invert(1)" src="./img/logoold.png">
-
-              
-
-
-              <ul class="breadcrumb list-unstyled" style="
-              margin-left: 10px; margin-bottom: 1px;
-          ">
-                <li><a href="#">Home Page</a>
-                </li>
-                
-            </ul>
-              <!-- <nav aria-label="breadcrumb" class="" style="
-              margin-left: 10px;
-          ">
-                <ol class="breadcrumb text-white">
-                  <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-white">Home Page</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"></li>
-  
-                </ol>
-              </nav> -->
   
   
             </div>
@@ -237,6 +217,39 @@
             </div>
           </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+
+    <style>
+      .breadcrumb {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.breadcrumb-item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.breadcrumb-item a {
+  color: white;
+  text-decoration: none;
+}
+    </style>
+    <div class="container-fluid bg-dark" style="--bs-bg-opacity: .5;">
+      <div class="">
+        <div class="">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active"></li>
+            </ol>
+          </nav>
+          
         </div>
       </div>
     </div>
