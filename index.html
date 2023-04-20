@@ -135,20 +135,31 @@
       <div class="row">
         <div class="col">
           <div
-            class="container d-flex justify-content-between align-items-center p-2"
+            class="container-fluid d-flex justify-content-between align-items-center pb-2 pt-2 ps-0 pe-0"
           >
-            <div class="logotuf fw-bold" style="font-size: 2rem">
-              <img
+            <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row" style="font-size: 1rem">
+              <img class="logotuf"
                 width="71px"
                 style="filter: invert(1)"
                 src="./img/logoold.png"
               />
+
+              <nav aria-label="breadcrumb" class="" style="
+              margin-left: 10px;
+          ">
+                <ol class="breadcrumb text-white">
+                  <li class="breadcrumb-item">Asus</li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="#">Tuf F15</a></li>
+                </ol>
+              </nav>
+
+
             </div>
             <div
               class="topbutton d-grid gap-2 d-md-flex justify-content-md-end align-items-center"
             >
               <a href="buynow.html" class="btn btn-success"> Check-Out </a>
-              <div class="dropdown">
+              <div class="dropdown d-none d-sm-block">
                 <div
                   class="btn btn-success dropdown-toggle"
                   role="button"
@@ -263,7 +274,7 @@
         <div data-aos="fade-up" class="performance">
           <h3 class="border-bottom">Windows 11 64-Bit</h3>
         </div>
-        <div data-aos="fade-right" class="d-flex flex-sm-row flex-column align-items-center">
+        <div data-aos="fade-up" class="d-flex flex-sm-row flex-column align-items-center">
           <div class="p-sm-5 p-2">
             <span>CPU</span>
             <h1>CORE™ I7</h1>
@@ -277,7 +288,7 @@
             <h1>3200MHZ</h1>
           </div>
         </div>
-        <div data-aos="fade-left" class="d-flex flex-sm-row flex-column align-items-center">
+        <div data-aos="fade-up" class="d-flex flex-sm-row flex-column align-items-center">
           <div class="p-sm-5 p-2">
             <span>STORAGE(SATA)</span>
             <h1>1TB HDD</h1>
@@ -289,7 +300,7 @@
         </div>
       </div>
     </div>
-    <div data-aos="fade-down" id="bg-img2">
+    <div data-aos="fade-up" id="bg-img2">
       <img src="./img/cont3.jpg" class="img-fluid" />
     </div>
     <div
@@ -314,7 +325,6 @@
         </div>
       </div>
       <div
-      data-aos="zoom-in" data-aos-duration="3000"
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -571,7 +581,7 @@
       <div class="row">
         <div class="col">
           <div
-            class="container d-flex flex-sm-row flex-column align-items-center justify-content-between p-2 text-center"
+            class="container-fluid d-flex flex-sm-row flex-column align-items-center justify-content-between p-2 text-center"
           >
             <h3 class="text-white">
               <img
@@ -587,6 +597,7 @@
               <span
                 >Website Created by
                 <a
+                target="_blank" 
                   href="https://www.linkedin.com/in/mehfooz-ahmed6607/"
                   class="text-decoration-none"
                   >Mehfooz Ahmed</a

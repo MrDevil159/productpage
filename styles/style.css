@@ -12,6 +12,21 @@ body {
   }
 }
 
+.breadcrumb {
+  height: 40px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: pink;
+}
+
 #bg-img {
   background: url("../img/00_bg.jpg");
   background-size: 100%;

@@ -51,6 +51,19 @@
     border-radius: 20px;
   }
   
+  .breadcrumb {
+    height: 40px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+.breadcrumb-item.active {
+    color: white;;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: pink;
+}
 
   .productdetail {
     ul {
