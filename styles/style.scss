@@ -15,11 +15,31 @@ body {
 }
 
 .breadcrumb {
-    height: 40px;
     text-align: center;
     line-height: 50px;
-    
+  
 }
+
+ul.breadcrumb {
+    position: relative;
+    li:before {
+      content: "  >  ";
+      color: pink;
+      margin: 0 1px 0 1px;
+      left: -10px;
+      top: 8px;
+      width: 20px;
+      height: 20px;
+    }
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  
+  
 .breadcrumb-item.active {
     color: white;;
 }

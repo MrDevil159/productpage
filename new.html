@@ -1,0 +1,425 @@
+
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asus TUF F15</title>
+    <style>
+      #main-image {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #main-image:hover {
+        opacity: 0.7;
+      }
+      /* The Modal (background) */
+      .modal1 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 99; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+      }
+      /* Modal Content (image) */
+      .modal1-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+      }
+  
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(1);
+        }
+        to {
+          -webkit-transform: scale(2);
+        }
+      }
+  
+      @keyframes zoom {
+        from {
+          transform: scale(0.4);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes zoom-out {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+      @keyframes zoom-out {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+      /* Add Animation */
+      .modal-content1 {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      .out {
+        animation-name: zoom-out;
+        animation-duration: 0.6s;
+      }
+      @media only screen and (max-width: 700px) {
+        .modal1-content {
+          width: 100%;
+        }
+      }
+    </style>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   
+    <script src="https://kit.fontawesome.com/fc8098c000.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/product.css">
+  </head>
+  <body>
+    <!-- <div class="container-fluid bg-dark">
+      <div class="row">
+        <div class="col">
+          <div
+            class="container d-flex justify-content-between align-items-center p-2"
+          >
+            <div class="d-flex align-items-center justify-content-center" style="font-size: 1rem">
+              <img class="logotuf"
+                width="71px"
+                style="filter: invert(1)"
+                src="./img/logoold.png"
+              />
+  
+              <nav aria-label="breadcrumb" class="" style="
+              margin-left: 10px;
+          ">
+                <ol class="breadcrumb text-white">
+                  <li class="breadcrumb-item">Asus</li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Tuf F15</a></li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="#">Check-Out</a></li>
+  
+                </ol>
+              </nav>
+            </div>
+            <div
+              class="topbutton d-grid gap-2 d-md-flex justify-content-md-end align-items-center"
+            >
+              <a
+                href="https://in.store.asus.com/tuf-f15-gtx.html"
+                class="btn btn-success"
+              >
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  
+  
+    <div class="container-fluid bg-dark">
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid d-flex justify-content-between align-items-center pb-2 pt-2 ps-0 pe-0">
+            <div class="d-flex flex-sm-row flex-column align-items-center justify-content-center" style="font-size: 1rem">
+              <img class="logotuf" width="71px" style="filter: invert(1)" src="./img/logoold.png">
+              
+              <ul class="breadcrumb list-unstyled" style="
+              margin-left: 10px; margin-bottom: 1px;
+          ">
+                <li><a href="./index.html">Home Page</a>
+                </li>
+                <li><a href="./buynow.html">Product</a>
+                </li>
+                <li><a href="#">Test Page</a>
+                </li>
+                </li>
+            </ul>
+  
+              <!-- <nav aria-label="breadcrumb" class="" style="
+              margin-left: 10px;
+          ">
+                <ol class="breadcrumb text-white">
+                  <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-white">Home Page</a></li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="#" class="text-decoration-none text-white">Check-Out</a></li>
+  
+                </ol>
+              </nav> -->
+  
+  
+            </div>
+            <div class="d-none d-lg-block">
+              <a href="new.html" class="btn btn-success"> Buy </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center ms-lg-5 me-lg-5 me-0 ms-0">
+        <div class="productcarousel m-3 w-sm-50">
+          <div class="image-carousel">
+            <div class="thumbnail-container">
+              <img src="./img/image1.jpg" class="thumbnail" data-image="./img/image1.jpg">
+              <img src="./img/image2.jpg" class="thumbnail" data-image="./img/image2.jpg">
+              <img src="./img/image3.jpg" class="thumbnail" data-image="./img/image3.jpg">
+              <img src="./img/image4.jpg" class="thumbnail" data-image="./img/image4.jpg">
+              <img src="./img/image5.jpg" class="thumbnail" data-image="./img/image5.jpg">
+              <img src="./img/image6.jpg" class="thumbnail" data-image="./img/image6.jpg">
+              <img src="./img/image7.jpg" class="thumbnail" data-image="./img/image7.jpg">
+              <img src="./img/image8.jpg" class="thumbnail" data-image="./img/image8.jpg">
+              <img src="./img/image9.jpg" class="thumbnail" data-image="./img/image9.jpg">
+              <img src="./img/image10.jpg" class="thumbnail" data-image="./img/image10.jpg">
+            </div>
+            <div class="main-image-container">
+              <div class="main-image-inner">
+                <img src="./img/image1.jpg" id="main-image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div id="myModal1" class="modal1">
+          <img class="modal1-content" id="img01">
+          <center>
+            <a id="enlarge" class="btn btn-primary mt-2">Enlarge</a>
+          </center>
+        </div>
+        <!-- end -->
+    
+        <div class="productdetail m-3 w-sm-50">
+          <h3 class="display-3 mb-2">ASUS TUF Gaming F15</h3>
+          <h2>Product Design</h2>
+          <ul>
+            <li>
+              <b>Processor:</b> 10th Gen, Intel Core i5-10300H Processor 2.5 GHz
+              (8M Cache, up to 4.5 GHz Turbo Boost, 4 cores)
+            </li>
+            <li>
+              <b>Memory:</b> 8GB DDR4 SO-DIMM(2933MHz for
+              i5-10300H/i7-10750H/i7-10870H) RAM expandable upto 32GB using 2x
+              DDR4 SO-DIMM slots
+            </li>
+            <li><b>Storage:</b> 512GB PCIe 3.0 NVMe M.2 SSD</li>
+            <li><b>Graphics:</b> NVIDIA GeForce GTX 1650 with 4GB GDDR6 VRAM</li>
+            <li>
+              <b>Display:</b> 15.6-inch Anti glare FHD (1920 x 1080) Value
+              IPS-level display panel having 16:9 Aspect Ratio || 144Hz Refresh
+              Rate || 250nits Brightness
+            </li>
+            <li><b>Operating System:</b> Windows 11 Home</li>
+          </ul>
+          <div class="pricedetail">
+            <div class="price-box">
+              <h2>Price: <span id="price">₹54990.00</span></h2>
+              <div class="add-ons">
+                <button class="add-on" data-price="2000.00">
+                  With Microsoft Office <span class="text-end">(+ 2000.00)</span>
+                </button>
+                <button class="add-on" data-price="4000.00">
+                  GPU - 1650 Ti (+ 4000.00)
+                </button>
+                <button class="add-on" data-price="4000.00">
+                  New Gen(Metal Backplate) (+ 4000.00)
+                </button>
+              </div>
+              <div class="">
+                <a href="https://in.store.asus.com/tuf-f15-gtx.html" class="btn btn-success"> Buy </a>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container-fluid bg-secondary mt-3">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex flex-sm-row text-white justify-content-center flex-column text-center">
+            <div class="p-sm-3 ps-sm-5 pe-sm-5 p-2">
+              <span class="display-6 fs-5">
+                <button type="button" class="btn btn-dark">
+                  <i class="fa fa-truck" aria-hidden="true"></i> Free Shipping
+                </button>
+              </span>
+            </div>
+            <div class="p-sm-3 ps-sm-5 pe-sm-5 p-2">
+              <span class="display-6 fs-5">
+                <button type="button" class="btn btn-dark">
+                  <i class="fa fa-credit-card" aria-hidden="true"></i> Safe and
+                  Secure Payments
+                </button>
+              </span>
+            </div>
+            <div class="p-sm-3 ps-sm-5 pe-sm-5 p-2">
+              <span class="display-6 fs-5">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa fa-headphones" aria-hidden="true"></i> Customer
+                  Support
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark">
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid d-flex flex-sm-row flex-column align-items-center justify-content-between p-2 text-center">
+            <h3 class="text-white">
+              <img class="justify-content-center" src="./img/logo-gray50.svg" height="30" alt="ASUS">
+            </h3>
+            <div class="topbutton text-white">
+              <h4>Powered By Asus</h4>
+              <span>Website Created by
+                <a target="_blank" href="https://www.linkedin.com/in/mehfooz-ahmed6607/" class="text-decoration-none">Mehfooz Ahmed</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="https://formspree.io/f/mvonvooy">
+              <div class="mb-3">
+                <label for="name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" name="name" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" name="email" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="phone" class="form-control" name="phone" id="phone">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Query:</label>
+                <textarea class="form-control" name="message-text" id="message-text" data-gramm="false" wt-ignore-input="true"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="submit" class="btn btn-success">
+                  Send message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var exampleModal = document.getElementById("exampleModal");
+      exampleModal.addEventListener("show.bs.modal", function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget;
+        // Extract info from data-bs-* attributes
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        var modalTitle = exampleModal.querySelector(".modal-title");
+        var modalBodyInput = exampleModal.querySelector(".modal-body input");
+  
+        modalTitle.textContent = "Contact Us";
+      });
+    </script>
+    <script>
+      // Get the thumbnail images and main image container
+      const thumbnails = document.querySelectorAll(".thumbnail");
+      const mainImage = document.querySelector("#main-image");
+  
+      // Add a click event listener to each thumbnail
+      thumbnails.forEach((thumbnail) => {
+        thumbnail.addEventListener("click", () => {
+          // Get the path to the clicked thumbnail image
+          const imagePath = thumbnail.getAttribute("data-image");
+  
+          // Update the main image container with the clicked thumbnail image
+          mainImage.setAttribute("src", imagePath);
+        });
+      });
+    </script>
+  
+    <script>
+      // Get the price element
+      var priceElement = document.getElementById("price");
+  
+      // Get all the add-on buttons
+      var addOns = document.querySelectorAll(".add-on");
+  
+      // Add an event listener to each button
+      for (var i = 0; i < addOns.length; i++) {
+        addOns[i].addEventListener("click", toggleAddOn);
+      }
+  
+      // Function to toggle an add-on
+      function toggleAddOn(event) {
+        var addOnButton = event.target;
+        // Toggle the "selected" class on the button
+        addOnButton.classList.toggle("selected");
+        // Update the price
+        updatePrice();
+      }
+  
+      // Function to update the price
+      function updatePrice() {
+        var price = 54990.0; // Base price
+        // Loop through all the add-on buttons and add their price if they're selected
+        for (var i = 0; i < addOns.length; i++) {
+          if (addOns[i].classList.contains("selected")) {
+            price += parseFloat(addOns[i].getAttribute("data-price"));
+          }
+        }
+        // Update the price element
+        priceElement.innerHTML = "₹" + price.toFixed(2);
+      }
+    </script>
+    <!-- Modal zoom -->
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal1");
+      var buttonenlarge = document.getElementById("enlarge");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("main-image");
+      var modalImg = document.getElementById("img01");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        buttonenlarge.setAttribute("href", this.src);
+      };
+  
+      // When the user clicks on <span> (x), close the modal
+      modal.onclick = function () {
+        img01.className += " out";
+        setTimeout(function () {
+          modal.style.display = "none";
+          img01.className = "modal1-content";
+        }, 400);
+      };
+    </script>
+  </html>
